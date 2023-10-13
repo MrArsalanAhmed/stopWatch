@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Stop Watch</title>
+</head>
+<body class="flex flex-col h-screen justify-center items-center bg-gray-100">
+    <h1 class="text-3xl font-bold mb-4"> Stop Watch</h1>
+    <div class="text-center">
+        <div class="flex space-x-4">
+            <div class="bg-blue-200 p-4 rounded-lg">
+                <span class="text-5xl font-semibold" id="hours">00</span>
+                <p class="text-sm">Hours</p>
+            </div>
+            <div class="bg-green-200 p-4 rounded-lg">
+                <span class="text-5xl font-semibold" id="minutes">00</span>
+                <p class="text-sm">Minutes</p>
+            </div>
+            <div class="bg-red-200 p-4 rounded-lg">
+                <span class="text-5xl font-semibold" id="seconds">00</span>
+                <p class="text-sm">Seconds</p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <div class="gap-10 justify-center flex">
+                <button class="start bg-[#48afff] text-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-500 border border-white-500 transition duration-300 ease-in-out">Start</button>
+                <button class="stop bg-[#48afff] text-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-500 border border-white-500 transition duration-300 ease-in-out">Stop</button>
+                <button class="reset bg-[#48afff] text-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-500 border border-white-500 transition duration-300 ease-in-out">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
